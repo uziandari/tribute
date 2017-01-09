@@ -29,12 +29,15 @@ export default class Navigation extends Component {
     return [
       <ul className="nav">
         <li key={1} className="link-item">
-          <Link to="/about">About</Link>
+          <Link to="/">Home</Link>
         </li>
         <li key={2} className="link-item">
-          <Link to="/timeline">Timeline</Link>
+          <Link to="/about">About</Link>
         </li>
         <li key={3} className="link-item">
+          <Link to="/timeline">Timeline</Link>
+        </li>
+        <li key={4} className="link-item">
           <Link to="/works">Works</Link>
         </li>
       </ul>
@@ -60,7 +63,7 @@ export default class Navigation extends Component {
     if(this.state.windowWidth <= 1080) {
       return [
         <div className="mobile-nav">
-          <p onClick={this.handleNavClick.bind(this)}><i className="icons">view_headline</i></p>
+          <p onClick={this.handleNavClick.bind(this)}><i className="icons">...</i></p>
           {this.renderMobileNav()}
         </div>
       ];
@@ -77,7 +80,6 @@ export default class Navigation extends Component {
   render() {
     return (
       <div className="nav-wrapper">
-        <div className="site-title"><Link to="/">TITLE</Link></div>
         {this.renderNav()}
       </div>
     );
