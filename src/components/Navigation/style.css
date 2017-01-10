@@ -1,6 +1,9 @@
 .nav-wrapper {
-  border-bottom: 5px solid #000;
+  background-color: #fff;
+  border-bottom: 5px solid #2a2a29;
   width: 100%;
+  padding: 0;
+  margin: 0;
 }
 
 .nav {
@@ -15,7 +18,7 @@
   display: -moz-flex;
   display: -webkit-flex;
   display: flex;
-    
+
   -webkit-justify-content: space-around;
   justify-content: space-around;
   -webkit-flex-flow: row wrap;
@@ -25,7 +28,7 @@
 }
 
 .link-item {
-  color: white;
+  color: #000;
   font-weight: bold;
   font-size: .750rem;
   text-align: center;
@@ -36,34 +39,34 @@
 
 @media (min-width: 1080px) {
   .link-item:nth-of-type(1) {
-    font-size: 1.5rem; 
+    font-size: 1.5rem;
     flex-grow: .5;
     text-align: left;
     padding-left: 60px;
   }
-  .link-item:nth-of-type(2) { 
+  .link-item:nth-of-type(2) {
     text-align: right;
     flex-grow: .2;
     padding-right: 5px;
   }
-  .link-item:nth-of-type(3) { 
+  .link-item:nth-of-type(3) {
     flex-grow: .2;
     text-align: right;
     padding-left: 5px;
   }
-  .link-item:nth-of-type(4) { 
+  .link-item:nth-of-type(4) {
     flex-grow: .2;
     text-align: right;
-    padding-left: 5px;  
+    padding-left: 5px;
   }
 }
 
 @media (max-width: 1080px) {
   .nav {
-    padding: 0;
+    padding: 0 0 10px 0;
     margin: 0;
     list-style: none;
-    
+
     -ms-box-orient: horizontal;
     display: -webkit-box;
     display: -moz-box;
@@ -76,12 +79,23 @@
   }
 
   .link-item {
-    color: white;
+    color: #000;
     font-weight: bold;
     font-size: 2rem;
     text-align: center;
     font-family: 'Muli';
     letter-spacing: .15em;
     padding: 15px;
+  }
+
+  .link-item:hover {
+    background-color: #3a3a29;
+  }
+
+  .icons {
+    color: #000;
+    font-weight: bold;
+    font-size: 2rem;
+    margin-left: 15px;
   }
 }
