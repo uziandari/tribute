@@ -9,9 +9,9 @@ class Hero extends Component {
       <div>
         <section className="hero">
           <div className="center-title">
-            <h1>Title</h1>
-            <h3>A longer subtitle but still important</h3>
-            <Link to="/about"><button className="button">About</button></Link>
+            <h1>Tim Berners-Lee</h1>
+            <h3>REsponsible for this webpage (in a way...)</h3>
+            <Link to="/about"><button className="button">About Tim</button></Link>
           </div>
         </section>
       </div>
