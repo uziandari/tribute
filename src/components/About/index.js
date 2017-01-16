@@ -9,7 +9,8 @@ export default class About extends Component {
     return (
       <div>
         <Navigation />
-        <h1>About</h1>
+        <h2>From Wikipedia:</h2>
+        <p>Words area</p>
       </div>
     );
   }

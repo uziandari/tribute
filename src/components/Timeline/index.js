@@ -9,9 +9,12 @@ export default class Timeline extends Component {
     return (
       <div>
         <Navigation />
-        <h1>
-          Timeline
-        </h1>
+        <h2>Timeline</h2>
+        <ul>
+          <li>timestuff</li>
+          <li>2ndtimestuff</li>
+          <li>3rdtimestuff</li>
+        </ul>
       </div>
     );
   }
