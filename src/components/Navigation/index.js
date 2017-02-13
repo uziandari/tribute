@@ -29,7 +29,7 @@ export default class Navigation extends Component {
     return [
       <ul className="nav">
         <li key={1} className="link-item">
-          <Link to="/">TB-L</Link>
+          <Link to="/">Home</Link>
         </li>
         <li key={2} className="link-item">
           <Link to="/about">About</Link>
